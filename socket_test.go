@@ -5,8 +5,8 @@ import (
 	"net"
 	"testing"
 
-	"github.com/zeromq/gomq/internal/test"
-	"github.com/zeromq/gomq/zmtp"
+	"github.com/hpgood/gomq/internal/test"
+	"github.com/hpgood/gomq/zmtp"
 )
 
 func TestNewClient(t *testing.T) {
