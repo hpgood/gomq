@@ -127,7 +127,7 @@ func (c *Connection) recvGreeting(asServer bool) error {
 		return fmt.Errorf("Signature prefix received does not correspond with expected signature. Received: %#v. Expected: %#v.", greeting.SignatureSuffix, signatureSuffix)
 	}
 
-	if greeting.Version != version {
+	if int(greeting.Version[0]) != int(majorVersion) {
 		return fmt.Errorf("Version %v.%v received does match expected version %v.%v", int(greeting.Version[0]), int(greeting.Version[1]), int(majorVersion), int(minorVersion))
 	}
 
