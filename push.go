@@ -3,7 +3,7 @@ package gomq
 import (
 	"net"
 
-	"github.com/zeromq/gomq/zmtp"
+	"github.com/hpgood/gomq/zmtp"
 )
 
 // PushSocket is a ZMQ_PUSH socket type.
